@@ -1,9 +1,8 @@
 from django.urls import path, include
-from django.contrib import admin
 from . import views
 from rest_framework import routers
 
-from blog.Core.views import CommentViewSet
+from Core import CommentViewSet
 
 router = routers.DefaultRouter()
 router.register(r'comments', CommentViewSet)
